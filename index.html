@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hydroponic Module Configurator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hydroponic Module Configurator</h1>
+    <p>Personalize your smart greenhouse module based on human nutritional needs.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Why Personalized Hydroponics?</h2>
+      <p>
+        Each person has unique nutritional needs. Our modular hydroponic system tailors its crop selection
+        based on who you are designing it for – whether it's for an infant, a senior, or an adult female.
+        Select the options below to get the best plant recommendations for your system.
+      </p>
+    </section>
+
+    <section class="config-section">
+      <div class="dropdown-container">
+        <div class="dropdown">
+          <label for="genderSelect">Select Gender:</label>
+          <select id="genderSelect">
+            <option value="">--Please select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Diverse">Diverse</option>
+          </select>
+        </div>
+
+        <div class="dropdown">
+          <label for="ageSelect">Select Age Group:</label>
+          <select id="ageSelect">
+            <option value="">--Please select--</option>
+            <option value="Infant">Infant</option>
+            <option value="Youth">Youth</option>
+            <option value="Adult">Adult</option>
+            <option value="Senior">Senior</option>
+          </select>
+        </div>
+      </div>
+
+      <button onclick="generateSuggestions()">Show Plant Suggestions</button>
+    </section>
+
+    <section id="results" class="results-section">
+      <!-- Suggestions will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HydroLife Systems – Modular Hydroponics for Everyone</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
